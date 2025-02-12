@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:hover {
+    color: crimson !important;
+}
+
+.noto-serif-display-header {
+    font-family: "Noto Serif Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    letter-spacing: 0.096em;
+}
+
+.sansation_light {
+    font-family: "Sansation", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.main-container {
+    display: grid;
+    height: 400vh;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.section1, .section3 {
+    background-color: #c1dbc8;
+}
+
+.section2, .section4 {
+    background-color: #4f865f;
+}
+
+.container-sm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.container-sm img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin-bottom: 20px; /* Add some space below the image */
+}
+
+.textbialy {
+    color: #f1f1f1;
+}
+
+#skrzypekgif img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the container without white bars */
+}
+
+.przezroczysty75 {
+    opacity: 75%;
+}
+
+@media (min-width: 768px) {
+    .container-sm {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .container-sm img {
+        width: 50%;
+        height: auto;
+        margin-right: 10%; /* Add some space to the right of the image */
+    }
+
+    .section3 {
+        display: flex;
+    }
+
+    .section3 .left-column {
+        flex: 1;
+    }
+
+    .section3 .right-column {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .section3 .right-column img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Ensure the image covers the container without white bars */
+    }
+
+    .section3-container {
+        padding-top: 15vh;
+    }
+}
+
